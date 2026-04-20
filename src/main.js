@@ -1,0 +1,1103 @@
+import './assets/css/style.css'
+import resumePDF from './assets/files/ELMI_MOHAMED_RAYEN_FlowCV_Resume_2026-04-05.pdf'
+import audioTestimonial from './assets/audio/testimo-1.opus'
+import avatarImg from './assets/images/my-avatar.png'
+import iconPortfolio from './assets/images/icon-portfolio.png'
+import iconLandingpage from './assets/images/icon-landingpage.png'
+import iconCommerce from './assets/images/icon-commerce.png'
+import iconDev from './assets/images/icon-dev.svg'
+import testimo1 from './assets/images/testimo-1.webp'
+import quoteIcon from './assets/images/icon-quote.svg'
+import project1 from './assets/images/project-1.png'
+import project2 from './assets/images/project-2.png'
+import project3 from './assets/images/project-3.png'
+import project4 from './assets/images/project-4.png'
+import project5 from './assets/images/project-5.png'
+import project6 from './assets/images/project-6.png'
+import project7 from './assets/images/project-7.png'
+import project8 from './assets/images/project-8.png'
+
+document.querySelector('#app').innerHTML = `
+<!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src=${avatarImg} alt="Mohamed Rayen Elmi" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Mohamed Rayen Elmi">Mohamed Rayen Elmi</h1>
+
+          <p class="title">Web developer</p>
+        </div>
+
+        <a href=${resumePDF} download class="download-cv-btn">
+          <ion-icon name="download-outline"></ion-icon>
+          <span>Download CV</span>
+        </a>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:medrayenelmi@gmail.com" class="contact-link">medrayenelmi@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+21656803853" class="contact-link">+216 56 803 853</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2004-05-30">May 30, 2004</time>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/medrayentn/" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/profile.php?id=10008929459029/" target="_blank" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/mohamedrayen_/" target="_blank" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/mohamed-rayen-elmi-73a070353/" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am a passionate Full-Stack Web Developer with expertise in both front-end and back-end technologies. I
+            love creating dynamic and responsive web applications that provide excellent user experiences.
+          </p>
+
+          <p>
+            I build modern websites that help businesses get more clients. My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+            Moreover, I
+            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+            across your
+            message and identity in the most creative way. I created web design for many famous brand companies.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I Can Do For You</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src=${iconPortfolio} alt="portfolio icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Portfolio Websites</h4>
+
+                <p class="service-item-text">
+                  I create stunning portfolio websites that showcase your work and skills in the best possible way.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src=${iconLandingpage} alt="landing page icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Landing Pages</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src=${iconCommerce} alt="e-commerce icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">E-Commerce Websites</h4>
+
+                <p class="service-item-text">
+                  Professional development of e-commerce sites at the professional level using Laravel.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src=${iconDev} alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Custom Web Apps</h4>
+
+                <p class="service-item-text">
+                  I create custom web applications tailored to your specific needs.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item data-audio-src=${audioTestimonial}>
+
+                <figure class="testimonials-avatar-box">
+                  <img src=${testimo1} alt="Ibrahim Jendoubi" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Ibrahim Jendoubi</h4>
+
+                <button class="testimonial-audio-btn" type="button" data-audio-btn>
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                  <span>Play voice</span>
+                </button>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="https://randomuser.me/api/portraits/men/47.jpg" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Amine</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Hello Rayen, un petit message pour te remercier pour le dev du site. Je suis ravi du résultat final.
+                    C’était un plaisir de bosser avec toi, on se recontacte vite pour la suite ! 🚀
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="https://randomuser.me/api/portraits/women/10.jpg" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Tasnime</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Top le site, merci Rayen ! Je vais te recommander autour de moi sans hésiter. On garde le contact
+                    pour les futures mises à jour ? Bonne continuation ! ✌️
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="https://randomuser.me/api/portraits/men/30.jpg" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Aziz</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Merci beaucoup Rayen pour le travail que tu as fait sur mon site. Je suis vraiment impressionné par
+                    la qualité du design et la fluidité de la navigation. C’était un plaisir de travailler avec toi, je
+                    te recommande vivement à tous ceux qui cherchent un développeur web talentueux ! 👏
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials template modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="https://randomuser.me/api/portraits/men/30.jpg" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src=${quoteIcon} alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">BTS IT Management</h4>
+
+              <span>2023 — 2025</span>
+
+              <p class="timeline-text">
+                IPSET - Institut Pilote des Sciences Economiques et de Technologie
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bachelor of Computer Science</h4>
+
+              <span>2022 — 2023</span>
+
+              <p class="timeline-text">
+                Lycée Hamouda Becha - Manouba
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Freelancing as a Web Developer</h4>
+
+              <span>2024 — Now</span>
+
+              <p class="timeline-text">
+                Website development for various clients. Developping lading pages, e-commerce sites, and web
+                applications.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Final Year Project</h4>
+
+              <span>December 2025</span>
+
+              <p class="timeline-text">
+                Development of a web application for managing telecommunications services for Tunisie Telecom.
+                <span>Technologies : ReactJS, TailwindCSS, Laravel, MySQL</span>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University Platform</h4>
+
+              <span>April 2025</span>
+
+              <p class="timeline-text">
+                Development of a showcase website for an institute with an integrated system for automated academic and
+                administrative management.
+                <span>Technologies : HTML5, CSS3, JavaScript, Bootstrap 5, PHP, MySQL</span>
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <div class="skills__container">
+            <div>
+              <div class="skills__circles">
+                <div class="skills__circle" style="--skill-color: #E34F26;">
+                  <i class="fa-brands fa-html5"></i>
+                </div>
+                <div class="skills__circle" style="--skill-color: #264DE4;">
+                  <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <div class="skills__circle" style="--skill-color: #F7DF1E;">
+                  <i class="fa-brands fa-js"></i>
+                </div>
+                <div class="skills__circle" style="--skill-color: #38BDF8;">
+                  <i class="fa-brands fa-tailwind-css"></i>
+                </div>
+                <div class="skills__circle" style="--skill-color: #61DAFB;">
+                  <i class="fa-brands fa-react"></i>
+                </div>
+                <div class="skills__circle" style="--skill-color: #777BB4;">
+                  <i class="fa-brands fa-php"></i>
+                </div>
+                <div class="skills__circle" style="--skill-color: #FF2D20;">
+                  <i class="fa-brands fa-laravel"></i>
+                </div>
+                <div class="skills__circle" style="--skill-color: #00758D;">
+                  <i class="fa-solid fa-database"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Portfolios</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Landing Pages</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>E-Commerce Websites</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web Applications</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Portfolios</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Landing Pages</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>E-Commerce Websites</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web Applications</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="portfolios">
+              <a href="https://medrayentn.github.io/BarhoumPortfolio/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src=${project1} alt="portfolio" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Barhoum Edity</h3>
+
+                <p class="project-category">Portfolio</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="landing pages">
+              <a href="https://medrayentn.github.io/clickora.agency/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src=${project2} alt="Clickora" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Clickora</h3>
+
+                <p class="project-category">Landing Page</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="landing pages">
+              <a href="https://medrayentn.github.io/ipset.tn/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src=${project3} alt="ipset" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Institut Pilote des Sciences Economiques et de Technologie</h3>
+
+                <p class="project-category">Landing Page</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web applications">
+              <a href="https://medrayentn.vercel.app/assets/images/project-4.png" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src=${project4} alt="ipset" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Institut Pilote des Sciences Economiques et de Technologie</h3>
+
+                <p class="project-category">University Management System</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web applications">
+              <a href="https://medrayentn.vercel.app/assets/images/project-5.png" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src=${project5} alt="Tunisie Telecom" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Tunisie Telecom</h3>
+
+                <p class="project-category">A modern web application for managing services at Tunisie Telecom.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="landing pages">
+              <a href="https://medrayentn.github.io/Devspire/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src=${project6} alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Devspire</h3>
+
+                <p class="project-category">Landing Page</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="portfolios">
+              <a href="https://react-rayen-portfolio.vercel.app/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src=${project7} alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Portfolio build with reactJS</h3>
+
+                <p class="project-category">Portfolio</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web applications">
+              <a>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src=${project8} alt="optima" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">OPTIMA - Plateforme de formation en ligne</h3>
+
+                <p class="project-category">Landing Page + Web Application</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+  - #CONTACT
+-->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Let's collaborate</h2>
+        </header>
+
+        <section class="contact-info-section">
+          <section class="about-text contact-text">
+          <p>
+            Feel free to reach out to me for collaborations, freelance projects, or just to say hello! I'm always open to discussing new opportunities and ideas.
+          </p>
+          </section>
+          <div class="contact-cards">
+            <!-- Email Card -->
+            <div class="contact-card" data-contact-card>
+              <div class="contact-card-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <h3 class="contact-card-title">Email</h3>
+              <p class="contact-card-detail">medrayenelmi@gmail.com</p>
+              <button class="contact-card-btn" data-contact-btn data-type="email">
+                <ion-icon name="mail-outline"></ion-icon>
+                <span>Send Email</span>
+              </button>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="contact-card" data-contact-card>
+              <div class="contact-card-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+              <h3 class="contact-card-title">Phone</h3>
+              <p class="contact-card-detail">+216 56 803 853</p>
+              <button class="contact-card-btn" data-contact-btn data-type="phone">
+                <ion-icon name="call-outline"></ion-icon>
+                <span>Call Now</span>
+              </button>
+            </div>
+
+            <!-- WhatsApp Card -->
+            <div class="contact-card" data-contact-card>
+              <div class="contact-card-icon">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </div>
+              <h3 class="contact-card-title">WhatsApp</h3>
+              <p class="contact-card-detail">+216 56 803 853</p>
+              <button class="contact-card-btn" data-contact-btn data-type="whatsapp">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                <span>DM me</span>
+              </button>
+            </div>
+          </div>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+`
+
+// element toggle function
+const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
+
+
+
+// sidebar variables
+const sidebar = document.querySelector("[data-sidebar]");
+const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+
+// sidebar toggle functionality for mobile
+sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
+
+
+
+// testimonials variables
+const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
+const modalContainer = document.querySelector("[data-modal-container]");
+const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
+const overlay = document.querySelector("[data-overlay]");
+
+// testimonial audio variables
+const testimonialAudio = new Audio();
+let currentAudioBtn = null;
+let currentAudioSrc = "";
+
+// modal variable
+const modalImg = document.querySelector("[data-modal-img]");
+const modalTitle = document.querySelector("[data-modal-title]");
+const modalText = document.querySelector("[data-modal-text]");
+
+// modal toggle function
+const testimonialsModalFunc = function () {
+  modalContainer.classList.toggle("active");
+  overlay.classList.toggle("active");
+}
+
+// add click event to all modal items
+for (let i = 0; i < testimonialsItem.length; i++) {
+
+  testimonialsItem[i].addEventListener("click", function () {
+
+    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
+    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
+    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
+    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
+
+    testimonialsModalFunc();
+
+  });
+
+}
+
+const audioBtns = document.querySelectorAll("[data-audio-btn]");
+
+const updateAudioButton = function (btn, isPlaying) {
+  if (!btn) return;
+  btn.classList.toggle("playing", isPlaying);
+  const icon = btn.querySelector("ion-icon");
+  const label = btn.querySelector("span");
+
+  if (isPlaying) {
+    icon.name = "stop-circle-outline";
+    label.innerText = "Pause voice";
+  } else {
+    icon.name = "play-circle-outline";
+    label.innerText = "Play voice";
+  }
+};
+
+for (let i = 0; i < audioBtns.length; i++) {
+  audioBtns[i].addEventListener("click", function (event) {
+    event.stopPropagation();
+
+    const testimonialsItem = this.closest("[data-testimonials-item]");
+    const audioSrc = testimonialsItem?.dataset.audioSrc;
+
+    if (!audioSrc) return;
+
+    if (currentAudioSrc !== audioSrc) {
+      testimonialAudio.src = audioSrc;
+      currentAudioSrc = audioSrc;
+    }
+
+    if (testimonialAudio.paused) {
+      if (currentAudioBtn && currentAudioBtn !== this) {
+        updateAudioButton(currentAudioBtn, false);
+      }
+
+      testimonialAudio.play().catch(() => {});
+      updateAudioButton(this, true);
+      currentAudioBtn = this;
+    } else {
+      testimonialAudio.pause();
+      updateAudioButton(this, false);
+    }
+  });
+}
+
+testimonialAudio.addEventListener("ended", function () {
+  updateAudioButton(currentAudioBtn, false);
+});
+
+// add click event to modal close button
+modalCloseBtn.addEventListener("click", testimonialsModalFunc);
+overlay.addEventListener("click", testimonialsModalFunc);
+
+
+
+// custom select variables
+const select = document.querySelector("[data-select]");
+const selectItems = document.querySelectorAll("[data-select-item]");
+const selectValue = document.querySelector("[data-selecct-value]");
+const filterBtn = document.querySelectorAll("[data-filter-btn]");
+
+select.addEventListener("click", function () { elementToggleFunc(this); });
+
+// add event in all select items
+for (let i = 0; i < selectItems.length; i++) {
+  selectItems[i].addEventListener("click", function () {
+
+    let selectedValue = this.innerText.toLowerCase();
+    selectValue.innerText = this.innerText;
+    elementToggleFunc(select);
+    filterFunc(selectedValue);
+
+  });
+}
+
+// filter variables
+const filterItems = document.querySelectorAll("[data-filter-item]");
+
+const filterFunc = function (selectedValue) {
+
+  for (let i = 0; i < filterItems.length; i++) {
+
+    if (selectedValue === "all") {
+      filterItems[i].classList.add("active");
+    } else if (selectedValue === filterItems[i].dataset.category) {
+      filterItems[i].classList.add("active");
+    } else {
+      filterItems[i].classList.remove("active");
+    }
+
+  }
+
+}
+
+// add event in all filter button items for large screen
+let lastClickedBtn = filterBtn[0];
+
+for (let i = 0; i < filterBtn.length; i++) {
+
+  filterBtn[i].addEventListener("click", function () {
+
+    let selectedValue = this.innerText.toLowerCase();
+    selectValue.innerText = this.innerText;
+    filterFunc(selectedValue);
+
+    lastClickedBtn.classList.remove("active");
+    this.classList.add("active");
+    lastClickedBtn = this;
+
+  });
+
+}
+
+
+
+// contact form variables
+const form = document.querySelector("[data-form]");
+const formInputs = document.querySelectorAll("[data-form-input]");
+const formBtn = document.querySelector("[data-form-btn]");
+
+// add event to all form input field
+for (let i = 0; i < formInputs.length; i++) {
+  formInputs[i].addEventListener("input", function () {
+
+    // check form validation
+    if (form.checkValidity()) {
+      formBtn.removeAttribute("disabled");
+    } else {
+      formBtn.setAttribute("disabled", "");
+    }
+
+  });
+}
+
+
+
+// page navigation variables
+const navigationLinks = document.querySelectorAll("[data-nav-link]");
+const pages = document.querySelectorAll("[data-page]");
+
+// add event to all nav link
+for (let i = 0; i < navigationLinks.length; i++) {
+  navigationLinks[i].addEventListener("click", function () {
+
+    for (let i = 0; i < pages.length; i++) {
+      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
+        pages[i].classList.add("active");
+        navigationLinks[i].classList.add("active");
+        window.scrollTo(0, 0);
+      } else {
+        pages[i].classList.remove("active");
+        navigationLinks[i].classList.remove("active");
+      }
+    }
+
+  });
+}
+
+// contact buttons functionality
+const contactBtns = document.querySelectorAll("[data-contact-btn]");
+
+if (contactBtns.length > 0) {
+  contactBtns.forEach(btn => {
+    btn.addEventListener("click", function(e) {
+      e.preventDefault();
+      const type = this.getAttribute("data-type");
+      const email = "medrayenelmi@gmail.com";
+      const phone = "21656803853"; // Without + for tel: links
+      
+      switch(type) {
+        case "email":
+          window.location.href = `mailto:${email}`;
+          break;
+        case "phone":
+          window.location.href = `tel:${phone}`;
+          break;
+        case "whatsapp":
+          window.open(`https://wa.me/${phone}`, "_blank");
+          break;
+        default:
+          break;
+      }
+    });
+  });
+}
