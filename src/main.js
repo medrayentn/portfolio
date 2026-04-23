@@ -116,7 +116,7 @@ document.querySelector('#app').innerHTML = `
           </li>
 
           <li class="social-item">
-            <a href="https://www.facebook.com/profile.php?id=10008929459029/" target="_blank" class="social-link">
+            <a href="https://www.facebook.com/profile.php?id=61572129735758/" target="_blank" class="social-link">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
