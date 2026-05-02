@@ -189,7 +189,7 @@ document.querySelector('#app').innerHTML = `
 
         <section class="about-text">
           <p>
-            I am a passionate Full-Stack Web Developer with expertise in both front-end and back-end technologies. I
+            I am a passionate Full-Stack Web Developer with 1 year of experience in both front-end and back-end technologies. I
             love creating dynamic and responsive web applications that provide excellent user experiences.
           </p>
 
