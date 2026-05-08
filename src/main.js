@@ -828,17 +828,7 @@ document.querySelector('#app').innerHTML = `
             </div>
 
             <!-- Phone Card -->
-            <!-- <div class="contact-card" data-contact-card>
-              <div class="contact-card-icon">
-                <ion-icon name="call-outline"></ion-icon>
-              </div>
-              <h3 class="contact-card-title">Phone</h3>
-              <p class="contact-card-detail">+216 56 803 853</p>
-              <button class="contact-card-btn" data-contact-btn data-type="phone">
-                <ion-icon name="call-outline"></ion-icon>
-                <span>Call Now</span>
-              </button>
-            </div> -->
+            
 
             <!-- WhatsApp Card -->
             <div class="contact-card" data-contact-card>
