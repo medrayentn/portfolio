@@ -828,7 +828,7 @@ document.querySelector('#app').innerHTML = `
             </div>
 
             <!-- Phone Card -->
-            <div class="contact-card" data-contact-card>
+            <!-- <div class="contact-card" data-contact-card>
               <div class="contact-card-icon">
                 <ion-icon name="call-outline"></ion-icon>
               </div>
@@ -838,7 +838,7 @@ document.querySelector('#app').innerHTML = `
                 <ion-icon name="call-outline"></ion-icon>
                 <span>Call Now</span>
               </button>
-            </div>
+            </div> -->
 
             <!-- WhatsApp Card -->
             <div class="contact-card" data-contact-card>
