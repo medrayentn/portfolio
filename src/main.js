@@ -442,8 +442,6 @@ document.querySelector('#app').innerHTML = `
 
               <h4 class="h4 timeline-item-title">Bachelor of Computer Science</h4>
 
-              <span>2022 — 2023</span>
-
               <p class="timeline-text">
                 Lycée Hamouda Becha - Manouba
               </p>
@@ -470,8 +468,6 @@ document.querySelector('#app').innerHTML = `
 
               <h4 class="h4 timeline-item-title">Freelancing as a Web Developer</h4>
 
-              <span>2024 — Now</span>
-
               <p class="timeline-text">
                 Website development for various clients. Developping lading pages, e-commerce sites, and web
                 applications.
@@ -483,8 +479,6 @@ document.querySelector('#app').innerHTML = `
 
               <h4 class="h4 timeline-item-title">Final Year Project</h4>
 
-              <span>December 2025</span>
-
               <p class="timeline-text">
                 Development of a web application for managing telecommunications services for Tunisie Telecom.
                 <span>Technologies : ReactJS, TailwindCSS, Laravel, MySQL</span>
@@ -495,8 +489,6 @@ document.querySelector('#app').innerHTML = `
             <li class="timeline-item">
 
               <h4 class="h4 timeline-item-title">University Platform</h4>
-
-              <span>April 2025</span>
 
               <p class="timeline-text">
                 Development of a showcase website for an institute with an integrated system for automated academic and
