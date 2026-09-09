@@ -95,12 +95,6 @@ document.querySelector('#app').innerHTML = `
               <ion-icon name="calendar-outline"></ion-icon>
             </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="2004-05-30">May 30, 2004</time>
-            </div>
-
           </li>
 
         </ul>
