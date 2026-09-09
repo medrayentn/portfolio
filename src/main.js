@@ -432,8 +432,6 @@ document.querySelector('#app').innerHTML = `
 
               <h4 class="h4 timeline-item-title">BTS IT Management</h4>
 
-              <span>2023 — 2025</span>
-
               <p class="timeline-text">
                 IPSET - Institut Pilote des Sciences Economiques et de Technologie
               </p>
