@@ -77,14 +77,18 @@ document.querySelector('#app').innerHTML = `
 
           <li class="contact-item">
 
-            <div class="icon-box">
+            <!--
               <ion-icon name="phone-portrait-outline"></ion-icon>
+            -->
+
+            <div class="icon-box">
+              <ion-icon name="logo-whatsapp"></ion-icon>
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Phone</p>
+              <p class="contact-title">Whatsapp</p>
 
-              <a href="tel:+21656803853" class="contact-link">+216 56 803 853</a>
+              <a href="https://api.whatsapp.com/send/?phone=21656803853&text&type=phone_number&app_absent=0" class="contact-link">+216 56 803 853</a>
             </div>
 
           </li>
