@@ -89,14 +89,6 @@ document.querySelector('#app').innerHTML = `
 
           </li>
 
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-          </li>
-
         </ul>
 
         <div class="separator"></div>
