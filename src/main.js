@@ -1,5 +1,5 @@
 import './assets/css/style.css'
-import resumePDF from './assets/files/ELMI_MOHAMED_RAYEN_FlowCV_Resume_2026-04-05.pdf'
+import resumePDF from './assets/files/CV_DEV_WEB_2026-09-09.pdf'
 import audioTestimonial from './assets/audio/testimo-1.opus'
 import avatarImg from './assets/images/my-avatar.png'
 import iconPortfolio from './assets/images/icon-portfolio.png'
